@@ -7,7 +7,7 @@ import '@/app/styles/nose-scene.css';
 
 function NoseModel() {
     const { scene } = useGLTF('/assets/models/nose/scene.gltf');
-    return <primitive object={scene} position={[0, 1, 0]} />;
+    return <primitive object={scene} position={[0, 5, 0]} />;
 }
 
 function LoadingFallback() {
@@ -67,9 +67,10 @@ export default function NoseScene() {
         <div className="nose-scene">
             <Canvas
                 camera={{
-                    position: [20, -10, 10],
-                    fov: 25,
+                    position: [15, 0, 20],
+                    fov: 20,
                     near: 0.1,
+                    far: 50
                 }}
                 shadows
                 onError={handleError}
