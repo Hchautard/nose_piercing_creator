@@ -1,11 +1,5 @@
-import NoseScene from "@/app/pages/nose-scene";
+import BagEditor from "@/app/components/BagEditor";
 
 export default function Home() {
-  return (
-    <div>
-      <main>
-        <NoseScene />
-      </main>
-    </div>
-  );
+  return <BagEditor />;
 }
